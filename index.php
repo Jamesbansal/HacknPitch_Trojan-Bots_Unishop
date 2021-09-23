@@ -38,8 +38,10 @@
                   </div>
                </div>
                <div><a><br><br></a></div>
-               <?php if($flag==1) { ?>
-               <div class="form-sh"> <a class="btn" href="sell.php">Want to sell your items? Click Here</a> </div> <?php } ?>
+               <?php if($_SESSION['flag']==1) { ?>
+               <div class="form-sh"> <a class="btn" href="sell.php">Want to sell your items? Click Here</a> </div> <?php } else { ?>
+                  <div class="form-sh"> <a class="btn" href="login.php">Want to sell your items? Login Now</a> </div>
+                  <?php } ?>
                <div><a><br><br> <br></a></div>
                <div class="categories_link">
                   <a href="#">Browse all categories here<br><br></a>
@@ -102,7 +104,9 @@
                         </div>
                      </a>
                   </div>
-
+                  <div class="categories_link">
+                     <a><br><br>MORE ABOUT US:</a>
+                  </div>
                </div>
             </div>
          </div>

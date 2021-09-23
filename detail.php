@@ -1,13 +1,13 @@
-<?php 
+<?php
  include("header.php");
 
-	
+
 	include ("connect.php");
     $sno=$_GET['sno'];
     $sql=mysqli_query($con,"select * from product where sno='$sno' ")or die('Error:- '.mysqli_error($con));
-        
+
     while($rs=mysqli_fetch_array($sql))
-    {    
+    {
  ?>
 <br> <br> <br>
 
@@ -21,8 +21,8 @@
               <span class="icon icon-close" data-toggle="tooltip" data-placement="top" title="" data-original-title="Close"></span>
               <span class="write" data-toggle="tooltip" data-placement="top" title="" data-original-title="New"></span>
               <img style="margin:20px; border-radius: 8px; border: 2px solid #ddd; padding:10px;" src="image/<?php echo $rs[8];?>" alt="cover" class="cover">
-             
-    
+
+
             <div class="row">
               <div class="col-md-4 col-md-5 col-xs-12">
                 <div style="color:white ; font-size: large;" class="row">
@@ -44,16 +44,27 @@
                   <div style="color:white" class="col-xs-9">
                     <?php echo $rs[2];?>
                   </div>
-                  
-                  
+
+
                   <div style="color:white" class="col-xs-3">
-                    Year: 
+                    Year:
                   </div>
                   <div style="color:white" class="col-xs-9">
                   <?php echo $rs[4];?>
                   </div>
+                  <form action="action.php?pid=6" method="POST" name="form">
+                    <input type="hidden" name="name" value="<?php echo $rs[6]; ?>">
+                    <input type="hidden" name="cat" value="<?php echo $cat; ?>">
+                    <input type="hidden" name="img" value="<?php echo $rs[9]; ?>">
+                     <input type="hidden" name="sno" value="<?php echo $rs[0]; ?>">
+
+                  <div>
+                    <span class="col-lg-12" ><button type="submit" class="btn btn-primary btn-md"  name="submit" value="submit" >Add to Wishlist  <img src="images/wlist.png" alt="" width="22" height="22"/></button></a> </span>
+                  </div>
+                </form>
                 </div>
               </div>
+
               <div style="color:white ; font-size: large; " class="col-lg-8 col-md-7 col-xs-12">
               <p style="color:white ;margin:10px; " class="contact-description">Product Name: <?php echo $rs[5];?> </p>
               <p style="color:white ;margin:10px;" class="contact-description">Product Category: <?php echo $rs[7];?> </p>
@@ -65,10 +76,7 @@
         </div>
       </div>
   </div>
- 
- <?php } 
+
+ <?php }
  include("footer.php");
  ?>
-
-
-	
