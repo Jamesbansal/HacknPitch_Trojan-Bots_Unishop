@@ -99,7 +99,7 @@ require_once 'vendor/autoload.php';
          <nav class="navbar navbar-default">
             <div class="container-fluid">
                <div class="row">
-                  <div class="col-md-4 col-sm-12 left-rs">
+                  <div class="col-md-2 col-sm-12 left-rs">
                      <div class="navbar-header">
                         <button type="button" id="top-menu" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
@@ -110,7 +110,7 @@ require_once 'vendor/autoload.php';
                         <a href="index.php" class="navbar-brand"><img src="images/Unilogo.png" alt="" /></a>
                      </div>
                   </div>
-                  <div class="col-md-8 col-sm-12">
+                  <div class="col-md-10 col-sm-12">
                      <div class="right-nav">
                         <div class="login-sr">
                            <div class="login-signup">
