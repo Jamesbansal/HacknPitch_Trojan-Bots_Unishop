@@ -13,5 +13,5 @@ Our Website is Responsive and Mobile/Desktop Friendly.
 
 <b>2.TechStack:</b> Html, CSS, Javascript, Bootstrap, Php, MYSQL.
 
-<b>3.Collaborators :Pranav Mishra, Udipt Srivastav, Abhay Bansal.</b>
+<b>3.Collaborators :Pranav Mishra, Abhay Bansal, Udipt Srivastav.</b>
 
