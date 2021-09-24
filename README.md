@@ -11,7 +11,22 @@ Our Web Application 'UniShop' provides these students with a platform through wh
 Our Website is Responsive and Mobile/Desktop Friendly.
 
 <b><li>2.How to host it locally in your system:
-<b><li>3.TechStack:</b> Html, CSS, Javascript, Bootstrap, Php, MYSQL.
+  <ol>
+  <li>Download the zip file or clone the project.
+<li>Install XAMPP-XAMPP is a free and open-source cross-platform web server solution stack package developed by Apache Friends.(link to download : https://www.apachefriends.org/download.html).
+<li>Install Composer-Composer is an application-level package manager for the PHP programming language. (link to download : https://getcomposer.org/download/).
+  You may have to restart your System for composer to work.(look at their docs for more details).
+<li>Copy your entire project folder(or zip file ) and paste it inside the following directory :C:\xampp\htdocs (or the directory xampp is installed in).
+<li>Open Command line and change the directory to project folder (example:C:\xampp\htdocs\ecommerce) and write the following command: "composer require google/apiclient:^2.10". 
+  Wait for it to download the necessary files
+<li>After installation open xampp-control.exe (in C:\xampp) and start apache and mysql.
+<li>Click on Admin beside mysql in xampp-control.exe(this should open phpmyadmin on default browser).
+<li>Setting up the database: ecommerce.sql file is provided in the source code. You just have to import the file in phpmyadmin.(If you're having 
+  trouble, you may refer to this link:https://help.dreamhost.com/hc/en-us/articles/214395768-phpMyAdmin-How-to-import-a-database-or-table)
+<li>Open the following link in the browser to go to our homepage : http://localhost/ecommerce/index.php
+  </ol>
+      
+<b><li>3.TechStack:</b> Html, CSS, Javascript, Bootstrap, Php, MYSQL, Composer, Google Apiclient.
 
 <b><li>4.Collaborators :Pranav Mishra, Abhay Bansal, Udipt Srivastav.</b>
 
